@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const Todo = ({title}) => (
   <View>
-    <Text> {title}}</Text>
+    <Text> {title}</Text>
   </View>
 );
 
