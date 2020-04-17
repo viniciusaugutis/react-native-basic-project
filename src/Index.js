@@ -1,4 +1,5 @@
 import './config/ReactotronConfig';
+import './config/DevToolsConfig';
 
 import React, {Component} from 'react';
 import {StyleSheet, View, Button, Text} from 'react-native';
