@@ -28,3 +28,7 @@ react-native start --reset-cache: inicia o packager limpando cache e possíveis 
 ## Componentização
 
 Separar nosso código em vários componentes
+
+## Stateful e Stateless componentes
+
+Stateless: não possui estado e não usa o {Component} do React
