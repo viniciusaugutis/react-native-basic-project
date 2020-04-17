@@ -55,3 +55,13 @@ align-items por padrão é flex-start
 
 No react native não temos herança de estilos. Pai não passa para o filho.
 Salvo exceção quando estiver um text dentro do outro. Ai o filho herda a cor e o textSize
+
+## Eslint
+
+yarn add eslint -D
+
+yarn eslint --init
+
+yarn add babel-eslint -D
+
+yarn add prettier -D
