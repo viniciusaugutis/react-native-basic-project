@@ -65,3 +65,7 @@ yarn eslint --init
 yarn add babel-eslint -D
 
 yarn add prettier -D
+
+yarn add babel-plugin-root-import -D
+
+yarn add eslint-import-resolver-babel-plugin-root-import -D

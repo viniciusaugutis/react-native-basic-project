@@ -3,7 +3,7 @@ import './config/ReactotronConfig';
 import React, {Component} from 'react';
 import {StyleSheet, View, Button, Text} from 'react-native';
 
-import Todo from './components/Todo';
+import Todo from '~/components/Todo';
 import AppComponent from '../App';
 
 console.tron.log('Hello');
