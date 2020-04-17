@@ -43,3 +43,15 @@ componentDidUpdate: Executado depois que o component ja executou o render
 componentWillUnmount: executado antes do componente ser destruído
 
 Nesses ciclo de vida não é possível setar o estado de uma propriedade, com setState
+
+## Flexbox
+
+Por padrão todos componentes no react tem um display flex. Ele transforma todo os componentes para um tamanho flexível e se adapta ao resto do componente.
+flex: 1 - ele ocupa todo o espaço possivel de tela
+
+flexDirection: por padrão ele é column
+
+align-items por padrão é flex-start
+
+No react native não temos herança de estilos. Pai não passa para o filho.
+Salvo exceção quando estiver um text dentro do outro. Ai o filho herda a cor e o textSize
