@@ -2,7 +2,7 @@ import './config/ReactotronConfig';
 import './config/DevToolsConfig';
 
 import React, {Component} from 'react';
-import {StyleSheet, View, Button, Text} from 'react-native';
+import {StyleSheet, View, Button, Text, Platform} from 'react-native';
 
 import Todo from '~/components/Todo';
 import AppComponent from '../App';
@@ -30,6 +30,11 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
+        {Platform.OS === 'ios' ? (
+          <Text style={styles.text}>IOS</Text>
+        ) : (
+          <Text>Android</Text>
+        )}
         <View style={styles.box} />
         <View style={styles.box} />
         <View style={styles.box} />
@@ -83,5 +88,11 @@ const styles = StyleSheet.create({
   boxText: {
     color: '#FFF',
     fontSize: 20,
+  },
+  text: {
+    ...Platform.select({
+      ios: {},
+      android: {},
+    }),
   },
 });
