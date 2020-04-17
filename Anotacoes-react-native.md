@@ -31,4 +31,15 @@ Separar nosso código em vários componentes
 
 ## Stateful e Stateless componentes
 
+Statefull: possui estado
 Stateless: não possui estado e não usa o {Component} do React
+
+## Ciclo de vida do componente
+
+componentDidMount: chamada ao iniciar o componente. Tenho acesso as propriedades e estado do componente
+getDerivedStateFromProps: executado tanto antes do componentDidMount ou qualquer alteração no componente.
+shouldComponentUpdate: Chamado cada vez antes do render ser executado. É ele que define se componente deve ser atualizado ou não. Ele retorna true ou false
+componentDidUpdate: Executado depois que o component ja executou o render
+componentWillUnmount: executado antes do componente ser destruído
+
+Nesses ciclo de vida não é possível setar o estado de uma propriedade, com setState

@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {StyleSheet, View, Button, Text} from 'react-native';
 
 import Todo from './components/Todo';
+import AppComponent from '../App';
 
 export default class App extends Component {
   state = {
@@ -14,13 +15,17 @@ export default class App extends Component {
 
   addTodo = () => {
     this.setState({
-      todos: [...this.state.todos, {id: Math.random(), text: 'Novo todo'}],
+      todos: [
+        ...this.state.todos,
+        {id: Math.random(), text: 'Vitinho apareceu'},
+      ],
     });
   };
 
   render() {
     return (
       <View style={styles.container}>
+        <AppComponent />
         <Text>{this.state.usuario}</Text>
         {this.state.todos.map((todo) => {
           return <Todo key={todo.id} title={todo.text} />;
