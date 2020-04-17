@@ -8,7 +8,7 @@ export default class App extends Component {
     return (
       <View style={styles.container}>
         <Todo title="Estudar React Native" />
-        <Todo title="Estudar React Native 2" />
+        <Todo />
       </View>
     );
   }
